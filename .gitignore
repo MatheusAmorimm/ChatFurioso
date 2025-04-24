@@ -1,2 +1,4 @@
 .env
 handlers/__pychache__/
+handlers/*.pyc
+handlers/*.pyo
