@@ -1,6 +1,6 @@
 # 🐾 CHAT FURIOSO CSFANS
 
-Um bot de Telegram criado para os fãs do time de CS da FURIA, desenvolvido como parte do desafio de estágio em Engenharia de Software da organização. O bot oferece uma experiência conversacional interativa com foco na comunidade, trazendo conteúdos relevantes e dinâmicos para a torcida.
+Projeto desenvolvido para o desafio "Experiência Conversacional FURIA" — Estágio Engenharia de Software.
 
 ---
 
@@ -46,3 +46,14 @@ pip install -r requirements.txt
 
 # Execute o bot
 python bot.py
+```
+
+---
+
+## 🐾 Sobre a Furia
+
+A FURIA é uma organização brasileira de eSports que representa o Brasil com garra no cenário competitivo, especialmente em CS2. Nosso objetivo é transformar o esporte eletrônico em uma força cultural e social.
+
+## 👨‍💻 Autor
+
+Matheus "mtx" Amorim
