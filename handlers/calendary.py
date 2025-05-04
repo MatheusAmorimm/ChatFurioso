@@ -1,10 +1,25 @@
-from telegram import Update
-from telegram.ext import CallbackContext
-from handlers.menu import menu_principal
+import json
 
-async def calendary_callback(update: Update, context: CallbackContext):
-    query = update.callback_query
-    await query.answer()
-    await query.edit_message_text(text="📅 Aqui está a agenda da FURIA! (em breve...)")
-    await query.message.reply_text("Escolha outra opção:", reply_markup=menu_principal())
+async def calendary_command(update, context):
+    try:
+        with open('data/matches.json', 'r', encoding='utf-8') as file:
+            matches = json.load(file)
+
+        if not matches:
+            await update.message.reply_text("😥 Nenhuma partida encontrada para a FURIA.")
+            return
+
+        message = "🐾 Próximos jogos da FURIA:\n\n"
+        for match in matches:
+            message += (
+                f"🏆 {match['event']}\n"
+                f"⚔️ {match['team1']} vs {match['team2']}\n"
+                f"🕓 Horário: {match['date']} às {match['time']} (Brasília)\n\n"
+            )
+
+        await update.message.reply_text(message)
+
+    except Exception as e:
+        await update.message.reply_text(f"❌ Erro ao buscar partidas: {str(e)}")
+
     
