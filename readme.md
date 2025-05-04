@@ -9,7 +9,6 @@ Projeto desenvolvido para o desafio "Experiência Conversacional FURIA" — Est�
 - `/start` — Mensagem de boas-vindas com menu de comandos
 - `/agenda` — Próximos jogos do time
 - `/noticias` — Últimas notícias sobre a FURIA
-- `/quiz` — Teste seu conhecimento sobre o time
 - `/curiosidade` — Curiosidades aleatórias da FURIA e do cenário CS
 - ⚙️ Mais interações em desenvolvimento!
 
@@ -17,8 +16,8 @@ Projeto desenvolvido para o desafio "Experiência Conversacional FURIA" — Est�
 
 ## 📸 Demonstração
 
-> [Vídeo de demonstração em breve]  
-> *Vídeo de até 3 minutos mostrando as funcionalidades do bot.*
+> [[Vídeo de demonstração:](https://youtu.be/2z8rV9FQWrQ)]  
+
 
 ---
 
@@ -28,7 +27,7 @@ Projeto desenvolvido para o desafio "Experiência Conversacional FURIA" — Est�
 - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
 - [dotenv](https://pypi.org/project/python-dotenv/)
 - [Telegram Bot API](https://core.telegram.org/bots/api)
-
+  
 ---
 
 ## 🛠️ Como rodar localmente
